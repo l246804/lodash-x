@@ -10,7 +10,7 @@
     "release": false
   },
   "hooks": {
-    "before:init": [],
+    "before:init": ["pnpm build"],
     "after:bump": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
   "plugins": {
@@ -20,7 +20,7 @@
       "strictSemVer": true,
       "header": "# Changelog",
       "preset": {
-        "name": "conventionalcommits",
+        "name": "conventional-commits",
         "types": [
           {
             "type": "feat",
