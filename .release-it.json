@@ -20,7 +20,7 @@
       "strictSemVer": true,
       "header": "# Changelog",
       "preset": {
-        "name": "conventional-commits",
+        "name": "conventionalcommits",
         "types": [
           {
             "type": "feat",
