@@ -1,0 +1,16 @@
+{
+  "extends": ["./tsconfig.base.json"],
+  "compilerOptions": {
+    "composite": true,
+    "allowJs": true,
+    "types": ["node"]
+  },
+  "include": [
+    "scripts",
+    "internal",
+    "**/**.config.ts",
+    "**/**.config.cjs",
+    "**/**.config.mjs",
+    "**/**.config.js"
+  ]
+}
