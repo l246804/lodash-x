@@ -29,8 +29,11 @@ devDependencies:
     specifier: ^7.0.0
     version: 7.0.0(release-it@16.1.5)
   '@rhao/plop-generators':
-    specifier: ^0.3.2
-    version: 0.3.2(inquirer@9.2.10)(plop@3.1.2)
+    specifier: ^0.3.4
+    version: 0.3.4(inquirer@9.2.10)(plop@3.1.2)
+  '@rhao/types-base':
+    specifier: ^0.1.0
+    version: 0.1.0(typescript@5.1.6)
   '@types/fs-extra':
     specifier: ^11.0.1
     version: 11.0.1
@@ -1148,8 +1151,8 @@ packages:
       semver: 7.5.1
     dev: true
 
-  /@rhao/plop-generators@0.3.2(inquirer@9.2.10)(plop@3.1.2):
-    resolution: {integrity: sha512-KJULxrz8bflJJIUtBBslqDOeQczFZSDf82cVOmYDllwKKZ8zPZinm7fZcmlziO1B1uncEiWP5h7oN7gsYaH/Xw==}
+  /@rhao/plop-generators@0.3.4(inquirer@9.2.10)(plop@3.1.2):
+    resolution: {integrity: sha512-liVA3mfbrGJkGAtHP5+7fb9/l5zvkjUE7VEvnEODUjbM/4tfzyYfQzJ2oUpJUuqV+FJc/djaBhAo/WfvpwQP2w==}
     engines: {node: '>=16'}
     peerDependencies:
       plop: '>=3'
@@ -1162,6 +1165,15 @@ packages:
       plop: 3.1.2
     transitivePeerDependencies:
       - inquirer
+    dev: true
+
+  /@rhao/types-base@0.1.0(typescript@5.1.6):
+    resolution: {integrity: sha512-l0pUgL7u9t/rB4gYhT86Xvdl3p6LwHpFyvNmXSEj59YyENcolbTxsdnjXzaD1vgBgTE+sQHX1MR/Rcyz+KG6tw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      typescript: '>=5'
+    dependencies:
+      typescript: 5.1.6
     dev: true
 
   /@rollup/plugin-alias@5.0.0(rollup@3.28.0):

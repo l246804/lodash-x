@@ -1,7 +1,19 @@
 module.exports = {
   disableEmoji: false,
   format: '{type}{scope}: {emoji}{subject}',
-  list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
+  list: [
+    'feat',
+    'fix',
+    'chore',
+    'docs',
+    'refactor',
+    'style',
+    'perf',
+    'test',
+    'build',
+    'revert',
+    'ci',
+  ],
   maxMessageLength: 64,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
@@ -57,8 +69,19 @@ module.exports = {
       emoji: '💍',
       value: 'test',
     },
+    build: {
+      description: 'Changes that affect the build system or external dependencies',
+      emoji: '📦️',
+      value: 'build',
+    },
+    revert: {
+      description: 'Reverts a previous commit',
+      emoji: '⏪️',
+      value: 'revert',
+    },
     messages: {
-      type: 'Select the type of change that you\'re committing:',
+      // eslint-disable-next-line @typescript-eslint/quotes
+      type: "Select the type of change that you're committing:",
       customScope: 'Select the scope this component affects:',
       subject: 'Write a short, imperative mood description of the change:\n',
       body: 'Provide a longer description of the change:\n ',
