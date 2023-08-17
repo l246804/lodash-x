@@ -31,7 +31,7 @@ export interface SetupDefaults {
   treeOptions?: BasicTreeOptions
 }
 
-const defaults: SetupDefaults = {
+const setupDefaults: SetupDefaults = {
   treeOptions: {
     key: 'id',
     parentKey: 'parentId',
@@ -39,4 +39,4 @@ const defaults: SetupDefaults = {
   },
 }
 
-export default defaults
+export default setupDefaults
