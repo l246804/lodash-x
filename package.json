@@ -65,7 +65,7 @@
     "@antfu/eslint-config": "^0.40.2",
     "@release-it/conventional-changelog": "^7.0.0",
     "@rhao/plop-generators": "^0.3.4",
-    "@rhao/types-base": "^0.1.0",
+    "@rhao/types-base": "^0.1.1",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.5.0",
     "commitizen": "^4.3.0",

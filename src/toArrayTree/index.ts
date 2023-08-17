@@ -24,7 +24,7 @@ function strictTree(array: any[], opts: ToArrayTreeOptions<any>) {
   })
 }
 
-function setAttr(treeData: Recordable<any>, key?: string, value?: any) {
+function setAttr(treeData: Recordable, key?: string, value?: any) {
   if (key) treeData[key] = value
 }
 

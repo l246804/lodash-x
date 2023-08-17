@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@rhao/types-base':
+    specifier: ^0.1.1
+    version: 0.1.1(typescript@5.1.6)
   '@types/lodash':
     specifier: ^4.14.197
     version: 4.14.197
@@ -31,9 +34,6 @@ devDependencies:
   '@rhao/plop-generators':
     specifier: ^0.3.4
     version: 0.3.4(inquirer@9.2.10)(plop@3.1.2)
-  '@rhao/types-base':
-    specifier: ^0.1.0
-    version: 0.1.0(typescript@5.1.6)
   '@types/fs-extra':
     specifier: ^11.0.1
     version: 11.0.1
@@ -1167,14 +1167,14 @@ packages:
       - inquirer
     dev: true
 
-  /@rhao/types-base@0.1.0(typescript@5.1.6):
-    resolution: {integrity: sha512-l0pUgL7u9t/rB4gYhT86Xvdl3p6LwHpFyvNmXSEj59YyENcolbTxsdnjXzaD1vgBgTE+sQHX1MR/Rcyz+KG6tw==}
+  /@rhao/types-base@0.1.1(typescript@5.1.6):
+    resolution: {integrity: sha512-U2DT0jkkD62bsQV7q1ofQT+R+0zEH9UgpYFZyu0K1+8S2NpXILolnrGfFrzEEmHqTYAhrXgOAtDsh7lGM41VRw==}
     engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=5'
     dependencies:
       typescript: 5.1.6
-    dev: true
+    dev: false
 
   /@rollup/plugin-alias@5.0.0(rollup@3.28.0):
     resolution: {integrity: sha512-l9hY5chSCjuFRPsnRm16twWBiSApl2uYFLsepQYwtBuAxNMQ/1dJqADld40P0Jkqm65GRTLy/AC6hnpVebtLsA==}
@@ -6653,7 +6653,6 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /ufo@1.2.0:
     resolution: {integrity: sha512-RsPyTbqORDNDxqAdQPQBpgqhWle1VcTSou/FraClYlHf6TZnQcGslpLcAphNR+sQW4q5lLWLbOsRlh9j24baQg==}
