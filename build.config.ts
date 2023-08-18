@@ -1,3 +1,4 @@
+import { ModuleResolutionKind } from 'typescript'
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
@@ -9,6 +10,7 @@ export default defineBuildConfig({
     emitCJS: true,
     dts: {
       compilerOptions: {
+        moduleResolution: ModuleResolutionKind.Bundler,
         noEmitOnError: false,
       },
     },

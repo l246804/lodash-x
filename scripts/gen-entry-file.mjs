@@ -2,6 +2,8 @@ import { resolve } from 'node:path'
 import { cwd } from 'node:process'
 import fs from 'fs-extra'
 
+const onlyNamedExportFns = ['tree']
+
 const srcDir = resolve(cwd(), 'src')
 
 function writeEntryFile(content = '') {
@@ -9,8 +11,14 @@ function writeEntryFile(content = '') {
 }
 
 function resolveEntryFileContent(fns = []) {
-  const defaultExports = fns.map((fn) => `export { default as ${fn} } from './${fn}'`).join('\n')
-  const namedExports = fns.map((fn) => `export * from './${fn}'`).join('\n')
+  const defaultExports = fns
+    .filter((fn) => !onlyNamedExportFns.includes(fn))
+    .map((fn) => `export { default as ${fn} } from './${fn}'`)
+    .join('\n')
+  const namedExports = fns
+    .concat(onlyNamedExportFns)
+    .map((fn) => `export * from './${fn}'`)
+    .join('\n')
   return `\
 ${defaultExports}
 
