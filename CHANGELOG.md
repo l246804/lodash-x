@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.2.0](https://github.com/l246804/lodash-x/compare/v0.1.0...v0.2.0) (2023-08-18)
+
+
+### Features
+
+* 🎸 add filterTree ([e7d3829](https://github.com/l246804/lodash-x/commit/e7d3829a2d56e20cc65d3b21362dd1c0b21313ab))
+* 🎸 add findTree ([1cc79fb](https://github.com/l246804/lodash-x/commit/1cc79fb96e53be867ca4c2628435d6ce84bdfcd8))
+* 🎸 add forEachTree ([8df845c](https://github.com/l246804/lodash-x/commit/8df845c95a19c5e87f9678d1501739bd20817bd3))
+* 🎸 add mapTree ([2c9e4b7](https://github.com/l246804/lodash-x/commit/2c9e4b70845ddbdd4b8f1e9a2417f22b140a27ac))
+* 🎸 add searchTree ([50adaca](https://github.com/l246804/lodash-x/commit/50adaca04f9894925bc9f556d884ebb96ad882d7))
+* 🎸 add setupDefaults ([0bd7657](https://github.com/l246804/lodash-x/commit/0bd7657b1c46de047d677521a406df5be54594bb))
+* 🎸 add toArrayTree ([e3a9788](https://github.com/l246804/lodash-x/commit/e3a97885d157b3a89bdaecc5e856af356cd70686))
+* 🎸 add toTreeArray ([8ee4951](https://github.com/l246804/lodash-x/commit/8ee4951e55c11fb8e813e4576308e16df41c71b9))
+
+
+### Chores
+
+* 🤖 更新依赖 ([17292ed](https://github.com/l246804/lodash-x/commit/17292ed01329e59a9106317340860a66d8324ee6))
+* 🤖 提取树相关类型定义至单独文件 ([1b38512](https://github.com/l246804/lodash-x/commit/1b38512e52820a8fe94274df02aeb0ed335e432a))
+* 🤖 修改 .release-it.json ([7c3ad54](https://github.com/l246804/lodash-x/commit/7c3ad54b25dca06a53bf9a4fced16fa36d5846f7))
+
+
+### Refactors
+
+* 💡 rename unsetAttrs to batchUnset ([1b14d88](https://github.com/l246804/lodash-x/commit/1b14d8839bca75f3964da6d6d69f363678ad44a4))
+
 ## 0.1.0 (2023-08-15)
 
 
