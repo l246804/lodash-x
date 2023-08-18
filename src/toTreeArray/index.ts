@@ -1,5 +1,5 @@
 import { assign } from 'lodash-unified'
-import type { BasicTreeOptions } from '../setupDefaults'
+import type { BasicTreeOptions } from '../tree'
 import setupDefaults from '../setupDefaults'
 import batchUnset from '../batchUnset'
 

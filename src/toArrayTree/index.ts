@@ -1,10 +1,14 @@
 import { assign, orderBy } from 'lodash-unified'
 import type { Recordable } from '@rhao/types-base'
-import type { BasicTreeOptions } from '../setupDefaults'
+import type { ListIterator, Many, NotVoid } from 'lodash'
+import type { BasicTreeOptions } from '../tree'
 import setupDefaults from '../setupDefaults'
 import batchUnset from '../batchUnset'
 
-type OrderByParams<T extends object> = Parameters<typeof orderBy<T[]>>
+type OrderByParams<T extends object> = [
+  iterates?: Many<keyof T | ListIterator<T, NotVoid>>,
+  orders?: Many<boolean | 'asc' | 'desc'>,
+]
 
 export interface ToArrayTreeOptions<T extends object> extends BasicTreeOptions {
   /**
@@ -14,7 +18,7 @@ export interface ToArrayTreeOptions<T extends object> extends BasicTreeOptions {
   /**
    * 排序数组，依赖于 `orderBy()`，参数同其第 `2` 第 `3` 参数
    */
-  orderBy?: [iterates?: OrderByParams<T>[1], orders?: OrderByParams<T>[2]]
+  orderBy?: OrderByParams<T>
 }
 
 function strictTree(array: any[], opts: ToArrayTreeOptions<any>) {
@@ -70,7 +74,7 @@ function setAttr(treeData: Recordable, key?: string, value?: any) {
  * ]
  * ```
  */
-export default function toArrayTree<T extends object = any>(
+export default function toArrayTree<T extends object>(
   array: T[],
   options?: ToArrayTreeOptions<T>,
 ): T[] {
