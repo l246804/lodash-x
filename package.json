@@ -44,7 +44,6 @@
     "node": ">=14"
   },
   "scripts": {
-    "postinstall": "run-p gen:entry-file",
     "dev": "run-s gen:entry-file dev:lib",
     "dev:lib": "unbuild --stub",
     "build": "run-s gen:entry-file build:lib",
