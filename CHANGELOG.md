@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.1](https://github.com/l246804/lodash-x/compare/v0.2.0...v0.2.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* 🐛 移除 postinstall 脚本，防止发布后安装报错 ([2f8e804](https://github.com/l246804/lodash-x/commit/2f8e80411f679a9efef8cca88af3e7eee299deaf))
+
+
+### Docs
+
+* ✏️ 修改错误报名 ([9430af6](https://github.com/l246804/lodash-x/commit/9430af6a40840040f999b8a06d740ffd518a1aed))
+
 ## [0.2.0](https://github.com/l246804/lodash-x/compare/v0.1.0...v0.2.0) (2023-08-18)
 
 

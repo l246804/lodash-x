@@ -1,7 +1,7 @@
 {
   "name": "@rhao/lodash-x",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Extend generic functions based on lodash.",
   "author": "RayHao <https://github.com/l246804>",
   "license": "MIT",
