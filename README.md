@@ -20,7 +20,7 @@ pnpm add lodash-es @rhao/lodash-x
 
 ```js
 import { camelCase } from 'lodash-es'
-import { bigCamelCase } from '@lei-xx/web-utils'
+import { bigCamelCase } from '@rhao/lodash-x'
 
 const str = 'plain-text'
 
