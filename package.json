@@ -64,7 +64,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
     "@release-it/conventional-changelog": "^7.0.0",
-    "@rhao/plop-generators": "^0.3.4",
+    "@rhao/plop-generators": "latest",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.5.0",
     "commitizen": "^4.3.0",
