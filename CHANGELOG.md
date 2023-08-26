@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/l246804/lodash-x/compare/v0.2.1...v0.3.0) (2023-08-26)
+
+
+### Features
+
+* 🎸 add assignOwnKeys ([a57e906](https://github.com/l246804/lodash-x/commit/a57e906f01c9242a26bfa37fb425031a5f4cd636))
+* 🎸 add padZero ([0a56b4b](https://github.com/l246804/lodash-x/commit/0a56b4b5f018991a14a341e2a6f675a21cbb0497))
+
+
+### Chores
+
+* 🤖 移除 index.html ([ca8b063](https://github.com/l246804/lodash-x/commit/ca8b0633b2cd269e2116e3f05628ba9c284ce3e4))
+
 ## [0.2.1](https://github.com/l246804/lodash-x/compare/v0.2.0...v0.2.1) (2023-08-21)
 
 
