@@ -4,10 +4,11 @@
     "commitMessage": "release: v${version}"
   },
   "npm": {
-    "publish": false
+    "publish": true
   },
   "github": {
-    "release": true
+    "release": true,
+    "releaseName": "release v${version}"
   },
   "hooks": {
     "before:init": ["pnpm build"],
