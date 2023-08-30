@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/indent */
-import type { AllowNullish, Fn } from '@rhao/types-base'
+import type { Fn, MaybeNullish } from '@rhao/types-base'
 import { assign } from 'lodash-unified'
 import setupDefaults from '../setupDefaults'
 import type { FindResult, FindResultFlag } from '../findTree'
@@ -45,7 +45,7 @@ export type TreeIterator<T, R = void> = (
   /**
    * 父级节点
    */
-  parent: AllowNullish<T>,
+  parent: MaybeNullish<T>,
   /**
    * 路径链路
    */
@@ -64,7 +64,7 @@ export type HelperCreateTreeFuncHandler<O extends BasicTreeOptions, R = void, IR
   [
     tree: any[],
     iter: TreeIterator<any, IR>,
-    parent: AllowNullish<any>,
+    parent: MaybeNullish<any>,
     paths: string[],
     nodes: any[],
     childrenKey: string,

@@ -1,4 +1,4 @@
-import type { AllowNullish } from '@rhao/types-base'
+import type { MaybeNullish } from '@rhao/types-base'
 import type { BasicTreeOptions, HelperCreateTreeFuncHandler } from '../tree'
 import { helperCreateTreeFunc } from '../tree'
 
@@ -11,7 +11,7 @@ export interface FindResult<T = any> {
   node: T
   paths: string[]
   nodes: T[]
-  parent: AllowNullish<T>
+  parent: MaybeNullish<T>
   tree: T[]
 }
 

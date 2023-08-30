@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@rhao/types-base':
-    specifier: ^0.1.3
-    version: 0.1.3(typescript@5.1.6)
+    specifier: ^0.2.0
+    version: 0.2.0(typescript@5.1.6)
   '@types/lodash':
     specifier: ^4.14.197
     version: 4.14.197
@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^7.0.0
     version: 7.0.0(release-it@16.1.5)
   '@rhao/plop-generators':
-    specifier: latest
-    version: 0.3.7(inquirer@9.2.10)(plop@3.1.2)
+    specifier: ^0.7.1
+    version: 0.7.1(inquirer@9.2.10)(plop@3.1.2)
   '@types/fs-extra':
     specifier: ^11.0.1
     version: 11.0.1
@@ -1151,8 +1151,8 @@ packages:
       semver: 7.5.1
     dev: true
 
-  /@rhao/plop-generators@0.3.7(inquirer@9.2.10)(plop@3.1.2):
-    resolution: {integrity: sha512-XiQBZCq7P4fEv+d9ViiSDYI2qcv/FppHOrGh2CHy/4IRL5nL4Yme9iXgz4X0KZG1SeEUUwoTC+aJMJgFUUTkVQ==}
+  /@rhao/plop-generators@0.7.1(inquirer@9.2.10)(plop@3.1.2):
+    resolution: {integrity: sha512-UbCRNxfhKMZCSYsGJkxfWpld5vxmEu510lkAuuhgkrLwokSXdg+7bnFxJ9ABkEj0drEarhSdpRaGLilTc/EoXw==}
     engines: {node: '>=16'}
     peerDependencies:
       plop: '>=3'
@@ -1160,6 +1160,7 @@ packages:
       '@antfu/install-pkg': 0.1.1
       consola: 3.2.3
       execa: 7.2.0
+      fs-extra: 11.1.1
       inquirer-file-tree-selection-prompt: 2.0.5(inquirer@9.2.10)
       local-pkg: 0.4.3
       plop: 3.1.2
@@ -1167,8 +1168,8 @@ packages:
       - inquirer
     dev: true
 
-  /@rhao/types-base@0.1.3(typescript@5.1.6):
-    resolution: {integrity: sha512-86vT+gCx28NFrG5Aeh0O7a9Dc4OXd83BW9DQibvYCkxxw7+HIWoCLOiHLxBINQrNPA1LowTsRW+5xxxyHZvrsQ==}
+  /@rhao/types-base@0.2.0(typescript@5.1.6):
+    resolution: {integrity: sha512-t0Q3VtJTxANvnVde9ExdB/rfNNH7Ze0o/vPqsPdViaA5VEIjY/q2npilkmAzBN110eDiJf4Ej3pODGfqjUbMgQ==}
     engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=5'
