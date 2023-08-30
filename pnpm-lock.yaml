@@ -68,7 +68,7 @@ devDependencies:
     specifier: ^16.1.5
     version: 16.1.5
   typescript:
-    specifier: ^5.0.2
+    specifier: ^5.1.6
     version: 5.1.6
   unbuild:
     specifier: ^1.2.1

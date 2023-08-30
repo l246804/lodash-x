@@ -2,9 +2,10 @@
   /* ========================== Editor ========================== */
   "emmet.triggerExpansionOnTab": true,
   "files.autoSave": "onWindowChange",
-  "window.titleBarStyle": "custom",
   "explorer.compactFolders": false,
-  "editor.formatOnSave": true,
+  // 保存时只通过 eslint 修复代码
+  // 折行行为可通过手动触发快捷键让 prettier 处理
+  "editor.formatOnSave": false,
   "editor.minimap.renderCharacters": false,
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
@@ -133,6 +134,17 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["Falsey"]
   /* ========================== Formatter ========================== */
+
+  /* ========================== 常更改的配置项 ========================== */
+  "cSpell.words": [
+    "antfu",
+    "commitlint",
+    "conventionalcommits",
+    "infile",
+    "mkdist",
+    "plopfile",
+    "consola",
+    "execa"
+  ]
 }
