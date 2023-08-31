@@ -1,4 +1,9 @@
-export interface ToSwitchOptions<T = boolean> {
+import type { Fn } from '@rhao/types-base'
+import { isFunction } from 'lodash-unified'
+
+type SwitchCallback<T> = Fn<[value: T]>
+
+export interface CreateSwitchOptions<T = boolean> {
   /**
    * 初始值
    * @default false
@@ -19,6 +24,10 @@ export interface ToSwitchOptions<T = boolean> {
    * @default false
    */
   once?: boolean
+  /**
+   * 切换时触发
+   */
+  onToggle?: SwitchCallback<T>
 }
 
 /**
@@ -29,7 +38,7 @@ export interface ToSwitchOptions<T = boolean> {
  * const handleSwitchToggle = (val) => {
  *   console.log('开关值：', val)
  * }
- * const [isCanceled, cancelControls] = toSwitch(handleSwitchToggle)
+ * const [isCanceled, cancelControls] = createSwitch(handleSwitchToggle)
  *
  * isCanceled()
  * // => false
@@ -57,11 +66,16 @@ export interface ToSwitchOptions<T = boolean> {
  * // => false
  * ```
  */
-export default function toSwitch<T = boolean>(
-  onToggle?: (value: T) => void,
-  options?: ToSwitchOptions<T>,
+export default function createSwitch<T = boolean>(
+  options?: SwitchCallback<T> | CreateSwitchOptions<T>,
 ) {
-  const { initialValue = false, closeValue = false, openValue = true, once = false } = options || {}
+  const {
+    initialValue = false,
+    closeValue = false,
+    openValue = true,
+    once = false,
+    onToggle,
+  } = isFunction(options) ? { onToggle: options } : options || {}
 
   let allowWrite = true
   let value = initialValue as T
@@ -91,5 +105,5 @@ export default function toSwitch<T = boolean>(
 
   const controls = { toggle, open, close, revert }
 
-  return [read, controls]
+  return [read, controls] as const
 }
