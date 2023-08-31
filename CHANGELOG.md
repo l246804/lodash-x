@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.4.0](https://github.com/l246804/lodash-x/compare/v0.3.0...v0.4.0) (2023-08-31)
+
+
+### Chores
+
+* 🤖 update deps ([6802719](https://github.com/l246804/lodash-x/commit/6802719f9a4681b41f0ce492783edb1e8b78dea3))
+
+
+### Refactors
+
+* 💡 重构 toSwitch 为 createSwitch ([b076b54](https://github.com/l246804/lodash-x/commit/b076b5422f2ae19fc558314083c20238016b57fd))
+
+
+### Styles
+
+* 💄 update style configure ([1870514](https://github.com/l246804/lodash-x/commit/1870514efb1b8d562b6684e8854d45854da3fffa))
+
 ## [0.3.0](https://github.com/l246804/lodash-x/compare/v0.2.1...v0.3.0) (2023-08-26)
 
 
