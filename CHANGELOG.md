@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0](https://github.com/l246804/lodash-x/compare/v0.4.0...v0.5.0) (2023-09-05)
+
+
+### Features
+
+* 🎸 add combineURLs ([8a1921b](https://github.com/l246804/lodash-x/commit/8a1921bf6d4d64ccb14b57ddae729b6fc4357378))
+* 🎸 add isAbsoluteURL ([ce82dc2](https://github.com/l246804/lodash-x/commit/ce82dc2b8a320761b171ded03a729d8d04a363db))
+
 ## [0.4.0](https://github.com/l246804/lodash-x/compare/v0.3.0...v0.4.0) (2023-08-31)
 
 
