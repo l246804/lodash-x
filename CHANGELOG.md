@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/l246804/lodash-x/compare/v0.5.0...v0.5.1) (2023-09-13)
+
+
+### Bug Fixes
+
+* 🐛 修复 safeJSONParse 设置 defaultValue 无效 ([aea4563](https://github.com/l246804/lodash-x/commit/aea45637ba1d8cd4bb6663f510c1972497ece09d))
+
 ## [0.5.0](https://github.com/l246804/lodash-x/compare/v0.4.0...v0.5.0) (2023-09-05)
 
 
