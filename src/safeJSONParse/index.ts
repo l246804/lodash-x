@@ -1,6 +1,8 @@
+import type { MaybeNullish } from '@rhao/types-base'
+
 type SetValue<T = any> = (value: T) => void
 
-export interface SafeJSONParseContext {
+export interface SafeJSONParseContext<T> {
   /**
    * 本次解析是否失败
    */
@@ -16,7 +18,7 @@ export interface SafeJSONParseContext {
   /**
    * 获取解析后的值
    */
-  getValue: () => any
+  getValue: () => MaybeNullish<T>
   /**
    * 设置 `json`
    */
@@ -27,19 +29,19 @@ export interface SafeJSONParseContext {
   setValue: SetValue
 }
 
-export interface SafeJSONParseOptions {
+export interface SafeJSONParseOptions<T> {
   /**
    * 解析前回调
    */
-  onBefore?: (context: SafeJSONParseContext) => void
+  onBefore?: (context: SafeJSONParseContext<T>) => void
   /**
    * 解析后回调
    */
-  onAfter?: (context: SafeJSONParseContext) => void
+  onAfter?: (context: SafeJSONParseContext<T>) => void
   /**
    * 错误处理
    */
-  errorHandler?: (error: Error, context: SafeJSONParseContext) => void
+  errorHandler?: (error: Error, context: SafeJSONParseContext<T>) => void
   /**
    * `JSON.parse(text, reviver)`
    */
@@ -61,10 +63,10 @@ export interface SafeJSONParseOptions {
 export default function safeJSONParse<T>(
   json: string,
   defaultValue?: T,
-  options?: SafeJSONParseOptions,
+  options?: SafeJSONParseOptions<T>,
 ) {
   let value, error
-  const context: SafeJSONParseContext = {
+  const context: SafeJSONParseContext<T> = {
     isFail: () => !!error,
     getError: () => error,
     getValue: () => value ?? defaultValue,
@@ -79,12 +81,13 @@ export default function safeJSONParse<T>(
   try {
     options?.onBefore?.(context)
     value = JSON.parse(json, options?.reviver)
-  } catch (err: unknown) {
+  }
+  catch (err: unknown) {
     error = err
     options?.errorHandler?.(error, context)
   }
 
   options?.onAfter?.(context)
 
-  return value
+  return context.getValue()
 }
