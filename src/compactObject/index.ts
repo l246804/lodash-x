@@ -2,7 +2,7 @@ import type { Falsey } from 'lodash'
 import { fromPairs, toPairs } from 'lodash-unified'
 
 /**
- * 对象版本 `compact`
+ * 对象版 `compact`
  *
  * @example
  * ```ts

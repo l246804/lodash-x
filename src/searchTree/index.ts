@@ -42,26 +42,30 @@ const _searchTreeNode: Fn<
       // 处理源对象引用
       if (options.original) {
         result = node
-      } else {
+      }
+      else {
         result = assign({}, node)
         if (options.originalDataKey) result[options.originalDataKey] = node
       }
 
-      // 同步映射子级和原始子级
-      result[mapChildrenKey] = result[childrenKey] = _searchTreeNode(
-        isAllow,
-        node[childrenKey],
-        iter,
-        node,
-        _paths.concat(childrenKey),
-        _nodes,
-        childrenKey,
-        options,
-      )
+      // 存在子级时同步映射子级和原始子级
+      if (node[childrenKey]) {
+        result[mapChildrenKey] = result[childrenKey] = _searchTreeNode(
+          isAllow,
+          node[childrenKey],
+          iter,
+          node,
+          _paths.concat(childrenKey),
+          _nodes,
+          childrenKey,
+          options,
+        )
+      }
 
       // 如果通过或子级存在通过则添加结果
       if (isAllow || result[mapChildrenKey]?.length) results.push(result)
-    } else if (isAllow) {
+    }
+    else if (isAllow) {
       // 通过之后添加结果
       results.push(result)
     }
