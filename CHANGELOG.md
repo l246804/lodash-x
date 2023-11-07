@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/l246804/lodash-x/compare/v0.5.1...v0.5.2) (2023-11-07)
+
+
+### Bug Fixes
+
+* 🐛 修复 searchTree 不存在子级时遍历报错 ([cde2506](https://github.com/l246804/lodash-x/commit/cde25063f74cba978b498aa0ed3e389a28399f18))
+
 ## [0.5.1](https://github.com/l246804/lodash-x/compare/v0.5.0...v0.5.1) (2023-09-13)
 
 
