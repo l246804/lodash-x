@@ -1,29 +1,27 @@
-# `@rhao/lodash-x`
+# ~~@rhao/lodash-x~~
 
-#### 介绍
+> ***废弃声明：该包已被废弃，推荐使用 [`nice-fns`](https://www.npmjs.com/package/nice-fns)，拥有完整的单测和文档，并实现和优化了该包所有功能！***
 
-基于 `lodash` 扩展通用函数。
+#### 迁移至指南
 
-#### 安装教程
+安装 `nice-fns`
 
-- `CommonJS` 模块下使用 `lodash`
-- `ESModule` 模块下使用 `lodash-es`
-
-```bash
+```shell
 # npm
-npm i lodash-es @rhao/lodash-x
-# yarn | pnpm
-pnpm add lodash-es @rhao/lodash-x
+npm i nice-fns
+
+# yarn or pnpm
+pnpm add nice-fns
 ```
 
-#### 使用说明
+函数迁移指南：
 
-```js
-import { camelCase } from 'lodash-es'
-import { bigCamelCase } from '@rhao/lodash-x'
-
-const str = 'plain-text'
-
-console.log(camelCase(str)) // plainText
-console.log(bigCamelCase(str)) // PlainText
-```
+1. `assignOwnKeys` => `assignOwn`
+2. `bigCamelCase` => `pascalCase`
+3. `combineURLs` 支持多 `relativeURL`
+4. `controllablePromise` => `promiseWithControl`
+5. `createSwitch` 调用方式更改
+6. `pauseableTimer` => `timerWithControl`
+7. `safeJSONParse` => `parseJSON`
+8. `setupDefaults` 被移除
+9. `setupDefaults.treeOptions` => `treeDefaults`
