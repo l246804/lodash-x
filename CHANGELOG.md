@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/l246804/lodash-x/compare/v0.5.2...v0.5.3) (2023-12-13)
+
+
+### Docs
+
+* ✏️ 添加废弃声明 ([b0691c5](https://github.com/l246804/lodash-x/commit/b0691c56e09ae4b8d94d97be8de470004af73e6e))
+
 ## [0.5.2](https://github.com/l246804/lodash-x/compare/v0.5.1...v0.5.2) (2023-11-07)
 
 
